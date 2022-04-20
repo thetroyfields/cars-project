@@ -31,4 +31,8 @@ export class CarListItemComponent implements OnInit {
 
   }
 
+
+  handleNavigate(index:number){
+    this.router.navigateByUrl(`shopping/${index}`);
+  }
 }

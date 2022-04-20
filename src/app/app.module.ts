@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppingComponent } from './shopping/shopping.component';
@@ -14,6 +13,7 @@ import { NavComponent } from './shared/nav/nav.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { CarService } from './shopping/car-list/car.service';
 import { CarDetailComponent } from './shopping/car-detail/car-detail.component';
+import { ExampleComponent } from './example/example.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { CarDetailComponent } from './shopping/car-detail/car-detail.component';
     FooterComponent,
     NavComponent,
     HeaderComponent,
-    CarDetailComponent
+    CarDetailComponent,
+    ExampleComponent
   ],
   imports: [
     BrowserModule,
