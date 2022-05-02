@@ -15,21 +15,13 @@
 			<button
 			  type="button"
 			  class="btn btn-sm btn-success"
-			  (click)="onAddToCart(car)"
+			  (click)="onAddToCart()"
 			>
 			  Add
 			</button>
-			<button
-				type="button"
-				class="btn btn-sm btn-danger"
-				(click)="onRemoveFromCart()"
-			>
-			  Remove
-			</button>
-			<a [routerLink]="[index]"><button type="button" class="btn btn-sm btn-outline-primary">
+			<button type="button" class="btn btn-sm btn-outline-primary" (click)="onViewItem(index)">
 			  View
 			</button>
-			</a>
 		</div>
 		<small class="text-muted"> {{ car.price | currency: "USD" }} </small>
 	  </div>

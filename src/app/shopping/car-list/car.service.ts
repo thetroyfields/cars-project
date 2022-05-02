@@ -25,12 +25,12 @@ export class CarService {
       )
   ];
 
-  getCars() {
-	  return this.cars.slice();
+  getCar(index: number) {
+    return this.cars[index];
   }
 
-  addToCart() {
-    
+  getCars() {
+	  return this.cars.slice();
   }
 }
 

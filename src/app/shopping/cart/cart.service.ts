@@ -27,4 +27,9 @@ export class CartService {
     this.cart.push(car);
     this.cartChanged.next(this.cart.slice());
   }
+
+  removeFromCart(index: number){
+    this.cart.splice(index, 1);
+    this.cartChanged.next(this.cart.slice());
+  }
 }

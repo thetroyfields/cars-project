@@ -20,15 +20,11 @@ export class CarListItemComponent implements OnInit {
 
   }
 
-  onViewItem() {
-    this.router.navigate([''], {relativeTo: this.route});
+  onViewItem(index: number) {
+    this.router.navigateByUrl(`${this.car.name}/${index}`);
   }
-  onAddToCart(car: Car){
+  onAddToCart(){
     this.cartService.addToCart(this.car);
-  }
-
-  onRemoveFromCart() {
-
   }
 
 }
